@@ -35,7 +35,19 @@
 
   "start_track":"Start tracking order",
   "track_no":"Tracking No.",
-  "track_order":"Track Your Order"
+  "track_order":"Track Your Order",
+
+  "shipment_detail_states": {
+    "TICKET_CREATED":"Ticket created",
+    "PACKAGE_RECEIVED":"Package recieved",
+    "IN_TRANSIT":"In transition",
+    "OUT_FOR_DELIVERY":"Out for delivery",
+    "WAITING_FOR_CUSTOMER_ACTION":"Waiting for customer action",
+    "NOT_YET_SHIPPED":"Not yet shipped",
+    "DELIVERED_TO_SENDER":"Delivered to sender",
+    "CANCELLED":"Shipment canceled",
+    "DELIVERED":"Shipment Delivered"
+  }
 
 
 }

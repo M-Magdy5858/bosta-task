@@ -6,7 +6,7 @@ interface Translation {
 	[key: string]: string;
 }
 interface ShipmentDetail {
-	state: string;
+	state: any;
 	timestamp: string;
 	hub?: string;
 	exceptionCode?: string;
@@ -32,7 +32,7 @@ const ShipmentDetailsTable: React.FC<Props> = ({ details, t }) => {
 					<p className={styles.rowCell}>{data.hub ?? '-'}</p>
 					<p className={styles.rowCell}>{formatDateDDMMYYYY(data.timestamp)}</p>
 					<p className={styles.rowCell}>{formatDateTime(data.timestamp)}</p>
-					<p className={styles.rowCell}>{data.state ?? '-'}</p>
+					<p className={styles.rowCell}>{t.shipment_detail_states[data.state]}</p>
 				</div>
 			))}
 		</div>
