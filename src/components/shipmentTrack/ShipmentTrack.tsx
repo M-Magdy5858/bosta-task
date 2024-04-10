@@ -21,7 +21,6 @@ const statusColors = {
 };
 
 const ShipmentTrack: React.FC<Props> = ({ shipmentDetails, t, lang }) => {
-	console.log({ shipmentDetails });
 	const status = shipmentDetails.CurrentStatus.state;
 	const statusColor = statusColors[status as keyof typeof statusColors];
 	return (

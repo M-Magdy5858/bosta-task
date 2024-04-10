@@ -30,7 +30,6 @@ export const formatDateDetailed = (date: string , locale: string) : string=>{
     minute: "numeric",
     hour12: true,
   });
-  console.log({formattedDate});
   return `${formattedDate}  ${timeString}`
 }
 
