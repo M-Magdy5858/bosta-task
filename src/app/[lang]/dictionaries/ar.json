@@ -1,0 +1,41 @@
+{
+  "lang":"ENG",
+  "home":"الرئيسية",
+  "prices":"الأسعار",
+  "talk_sales":"كلم المبيعات",
+  "track_shipment":"تتبع شحنتك",
+  "login":"تسجيل الدخول",
+
+  "shipment_num":"رقم الشحنة",
+  "last_update":"آخر تحديث",
+  "merchant_name":"اسم التاجر",
+  "deliver_date":"موعد التسليم خلال",
+
+  "shipment_states": {
+    "DELIVERED":"تم تسليم الشحنة",
+    "DELIVERED_TO_SENDER":"لم يتم تسليم الشحنة",
+    "CANCELLED":"تم الغاء الشحنة"
+  },
+
+  "shipment_created":"تم انشاء الشحنة",
+  "shipment_recieved_merchant":"تم استلام الشحنة من التاجر",
+  "shipment_out_delivery":"الشحنة خرجت للتسليم",
+  "shipment_delivered":"تم التسليم",
+
+  "shipment_details":"تفاصيل الشحنة",
+  "address":"عنوان التسليم",
+
+  "branch":"الفرع",
+  "date":"التاريخ",
+  "time":"الوقت",
+  "details":"تفاصيل",
+
+  "report_problem":"إبلاغ عن مشكلة",
+  "shipment_problem":"هل يوجد مشكلة فى شحنتك ؟!",
+
+  "start_track":"ابدأ تتبع طلبـك",
+  "track_no":"رقم التتبع",
+  "track_order":"تتبع طلبــك"
+
+
+}

@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.navbar {
+  border-bottom: 1px solid $gray-100;
+  .container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 1rem;
+    @extend %flex-between;
+  
+    .linksWrapper {
+      @extend %flex-between;
+      max-width: 70%;
+      width: 100%;
+      gap: 2rem;
+      background-color: $primary-white;
+      z-index: 2;
+      .linkGroup {
+        @extend %flex-center-all;
+        gap: 3rem;
+        a {
+          font-weight: 700;
+        }
+        &:nth-of-type(2) {
+          gap: 2rem;
+        }
+      }
+  
+      @media (max-width: 768px) {
+        display: none;
+        &.dropDown {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          width: 100vw;
+          max-width: 100vw;
+          position: absolute;
+          top: 5rem;
+          inset-inline-start: 0;
+          transition: transform 0.4s ease-in-out;
+          z-index: 10;
+          touch-action: none;  // to prevent scrolling when menu is opened
+  
+          .linkGroup{
+            flex-direction: column;
+            gap: 2rem;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

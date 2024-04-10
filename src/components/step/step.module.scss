@@ -1,0 +1,102 @@
+@import '../../styles/variables';
+
+.step {
+	width: 100%;
+	// &.lastStep {
+	//   width: 0%;
+	// }
+	.stepTrack {
+		position: relative;
+		width: 100%;
+		margin-bottom: 1.5rem;
+		.line {
+			width: 100%;
+			height: 5px;
+			z-index: 1;
+		}
+		.icon {
+			position: absolute;
+			z-index: 2;
+			inset-inline-end: -8px;
+			top: -10px;
+			&.largeIcon {
+				top: -20px;
+				inset-inline-end: -20px;
+			}
+		}
+	}
+
+	p {
+		font-weight: 600;
+		font-size: 0.825rem;
+		width: max-content;
+		position: relative;
+		margin-inline-start: auto;
+		transform: translateX(50%);
+		[dir='rtl'] & {
+			transform: translateX(-50%);
+		}
+	}
+	&:first-of-type {
+		width: 0%;
+		p {
+			transform: translateX(0%);
+		}
+	}
+
+	&:last-of-type {
+		p {
+			transform: translateX(0%);
+		}
+		.icon {
+			&.largeIcon {
+				inset-inline-end: 0px;
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		display: flex;
+		&:first-of-type {
+			width: 100%;
+      height: 0;
+		}
+		.stepTrack {
+			width: 5px;
+			height: 7rem;
+			margin-bottom: 0;
+			.line {
+				// width: 100%;
+				height: 100%;
+				z-index: 1;
+			}
+			.icon {
+        position: absolute;
+        z-index: 2;
+        inset-inline-end: -6px;
+        top: unset;
+        bottom: -10px;
+        &.largeIcon {
+          top: unset;
+          bottom: -18px;
+          inset-inline-end: -22px;
+        }
+      }
+		}
+    &:first-of-type {
+      .icon {
+        top: -10px;
+      }
+      p{
+        top: -10px;
+      }
+    }
+		p {
+			margin-inline-start: 3rem;
+			transform: translateX(0%);
+			margin-top: auto;
+      top: 5px;
+      font-size: 1rem;
+		}
+	}
+}

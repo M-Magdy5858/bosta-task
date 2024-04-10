@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+.btn {
+  width: 100%;
+  padding: 0.25rem;
+  border-radius: 8px;
+  margin-block: 8px;
+  font-weight: 600;
+  &.primary{
+    background-color: $primary-red;
+    color: $primary-white;
+  }
+  &:disabled{
+    opacity: 0.5;
+  }
+}

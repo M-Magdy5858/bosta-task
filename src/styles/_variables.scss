@@ -1,0 +1,26 @@
+// Colors
+$primary-red: #e30613;
+$primary-green: #36b600;
+
+$primary-white: #fff;
+$white-50: #fafafa;
+
+$primary-black: #111619;
+
+$gray-100: #eeeeee;
+$gray-200: #cfcfcf;
+$gray-300: #b2b2b2;
+$gray-400: #98a3b9;
+$gray-500: #353e56;
+
+// Placeholders
+%flex-center-all {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+%flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

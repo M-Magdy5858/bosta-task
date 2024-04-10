@@ -1,0 +1,41 @@
+{
+  "lang":"العربية",
+  "home":"Home",
+  "prices":"Prices",
+  "talk_sales":"Talk to Sales",
+  "track_shipment":"Track Shipment",
+  "login":"Login",
+
+  "shipment_num":"Shipment Number",
+  "last_update":"Last update",
+  "merchant_name":"Merchant Name",
+  "deliver_date":"Delivery time within",
+
+  "shipment_states": {
+    "DELIVERED":"Shipment has been delivered",
+    "DELIVERED_TO_SENDER":"Shipment has not been delivered",
+    "CANCELLED":"Shipment has been canceled"
+  },
+
+  "shipment_created":"Shipment created",
+  "shipment_recieved_merchant":"Shipment received by merchant",
+  "shipment_out_delivery":"Shipment out for delivery",
+  "shipment_delivered":"Shipment Delivered",
+
+  "shipment_details":"Shipment details",
+  "address":"Delivery address",
+
+  "branch":"Branch",
+  "date":"Date",
+  "time":"Time",
+  "details":"Details",
+
+  "report_problem":"Report problem",
+  "shipment_problem":"Have a problem in your shipment?",
+
+  "start_track":"Start tracking order",
+  "track_no":"Tracking No.",
+  "track_order":"Track Your Order"
+
+
+}
