@@ -28,7 +28,7 @@ const ShipmentDetailsTable: React.FC<Props> = ({ details, t }) => {
 			</div>
 
 			{details?.map((data, i) => (
-				<div className={styles.tableRow}>
+				<div className={styles.tableRow} key={i}>
 					<p className={styles.rowCell}>{data.hub ?? '-'}</p>
 					<p className={styles.rowCell}>{formatDateDDMMYYYY(data.timestamp)}</p>
 					<p className={styles.rowCell}>{formatDateTime(data.timestamp)}</p>
